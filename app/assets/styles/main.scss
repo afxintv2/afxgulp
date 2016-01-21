@@ -1,0 +1,53 @@
+@import "http://fonts.googleapis.com/css?family=Raleway:100,400,300,500,600,700|Poppins:100,300,400,600,700";
+
+@import "foundry/bootstrap";
+@import "foundry/flexslider";
+@import "foundry/lightbox.min";
+@import "foundry/ytplayer";
+@import "_foundry";
+@import "fonts/themify-icons";
+@import "fonts/socialicious";
+
+.enddot {
+  &:after {
+    content: ".";
+    color: $color-primary;
+    font-size: 2em;
+    line-height: 1rem;
+  }
+}
+
+.enddot-white {
+  @extend .enddot;
+
+  &:after {
+    color: #fff;
+  }
+}
+
+hr.div {
+  border-width: 2px;
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr.div-left {
+  @extend hr.div;
+  margin-left: 0;
+}
+
+hr.div-right {
+  @extend hr.div;
+  margin-right: 0;
+}
+
+hr.div-accent {
+  @extend hr.div;
+  border-color: $color-primary;
+}
+
+hr.div-white {
+  @extend hr.div;
+  border-color: #fff;
+}

@@ -1,0 +1,193 @@
+extends layouts/_default
+
+block vars
+  - var pageId = 'index';
+
+block content
+
+  .main-container
+    section.bg-primary.pt240.pb240.pt-xs-120.pb-xs-80.overlay.image-bg.parallax.cover.fullscreen
+      .background-image-holder
+        img.background-image(alt="image", src="/assets/images/hero1.jpg")
+      .container.v-align-transform
+        .row
+          .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1.text-center
+            h3.mb56.mb-xs-24
+              | Arteffects International is a 
+              b digital design collective &#38; production house,
+              |  with experiences in 
+              b film scoring, artwork design, and media productions.
+            a.btn.btn-lg.btn-white.mb0.inner-link(href="#about") Get to know us better
+        // end of row
+      // end of container
+      
+    a#about
+    section.bg-dark.pt180.pb180.pt-xs-80.pb-xs-80
+      .container
+        .row
+          .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1.text-center
+            h3.mb40.mb-xs-32 An agency founded on the principles of Honesty, Clarity, Simplicity.
+            p.lead.mb0
+              | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        // end of row
+      // end of container
+      
+    a#work
+    section.pt0.pb0.pt-xs-80.bg-secondary.image-zoom
+      .container
+        .row
+          .col-md-5.col-sm-6.mt104.mt-sm-80.mt-xs-0.text-center-xs.mb-xs-40
+            h5.uppercase.enddot
+              strong Music Production
+            h4.mb120.mb-xs-80 We are passionate with our talents and skills. Let's create something together.
+            a.btn.btn-lg(href="#") View Case Study
+          .col-sm-4.col-md-push-2
+            img(alt="Pic", src="/assets/images/sec2.png")
+        // end of row
+      // end of container
+    section.pt0.pb0.pb-xs-80.image-zoom
+      .container
+        .row
+          .col-md-6.mb-xs-40
+            img.p32(alt="Pic", src="/assets/images/agency3.png")
+          .col-md-5.col-md-push-1.col-sm-6.mt104.mt-sm-80.mt-xs-0.text-center-xs
+            h5.uppercase.enddot
+              strong ALBM
+            h4.mb120.mb-xs-80 We worked with ALBM to deliver an immersive mobile experience.
+            a.btn.btn-lg(href="#") View Case Study
+        // end of row
+      // end of container
+    section.image-bg.overlay.pt120.pb120.pt-xs-80.pb-xs-80.parallax
+      .background-image-holder
+        img.background-image(alt="image", src="/assets/images/agency4.jpg")
+      .container
+        .row
+          .col-md-6
+            h5.uppercase.enddot-white
+              strong Aviary Gallery
+            h4.mb160.mb-xs-80 This impeccably designed Melbourne gallery establishes a new online presence.
+            a.btn.btn-lg.btn-filled(href="#") View Case Study
+        // end of row
+      // end of container
+      
+    a#clients
+    section.bg-secondary.pt180.pb180.pt-xs-80.pb-xs-80
+      .container
+        .row
+          .col-md-6.col-md-offset-3.text-center
+            h3.mb48.mb-xs-32 Some amazing companies we"ve had the pleasure to work with.
+            .text-slider.slider-paging-controls.text-center.relative
+              ul.slides
+                li
+                  h5
+                    | The guys at Foundry were an absolute pleasure to work with - they took on our project with the same enthusiasm and passion as us.
+                  .quote-author
+                    img.image-xs.mb16(alt="Author", src="/assets/images/avatar4.png")
+                    h6.uppercase.mb0 Anna Thompson
+                    span Vault
+                li
+                  h5
+                    | We"ve worked with Foundry on our web presence over the past 8 years and always relish the opportunity to work alongside them.
+                  .quote-author
+                    img.image-xs.mb16(alt="Author", src="/assets/images/avatar3.png")
+                    h6.uppercase.mb0 Carl Vance
+                    span Aviary Bar
+                li
+                  h5
+                    | There is only once choice when it comes to our marketing collateral, Foundry always deliver inspiring work on-time and budget.
+                  .quote-author
+                    img.image-xs.mb16(alt="Author", src="/assets/images/avatar6.png")
+                    h6.uppercase.mb0 Natasha Canter
+                    span Vault
+        // end of row
+      // end of container
+      
+    section.bg-primary
+      .container
+        .row
+          .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1.text-center.overflow-hidden
+            h3.uppercase.text-center.mb32 Selected Clients
+            hr.div.mt32.mb32
+            .col-sm-6
+              ul
+                li
+                  h6.uppercase.mb8 Apple
+                li
+                  h6.uppercase.mb8 Acorn Technology
+                li
+                  h6.uppercase.mb8 Google
+                li
+                  h6.uppercase.mb8 Gourmet Traveller
+                li
+                  h6.uppercase.mb8 Broadsheet
+                li
+                  h6.uppercase.mb8 Padre Food Co.
+                li
+                  h6.uppercase.mb8 Foundry
+            .col-sm-6
+              ul
+                li
+                  h6.uppercase.mb8 BOSE
+                li
+                  h6.uppercase.mb8 Kilgour Wines
+                li
+                  h6.uppercase.mb8 University of Victoria
+                li
+                  h6.uppercase.mb8 MOMA NYC
+                li
+                  h6.uppercase.mb8 Belltower Ltd.
+                li
+                  h6.uppercase.mb8 Bowers &#38; Wilkins
+        // end of row
+      // end of container
+      
+    a#contact
+    section.pt120.pb120.image-bg
+      .map-canvas(data-map-zoom="10", data-address="pulau klang", data-maps-api-key="AIzaSyCfo_V3gmpPm1WzJEC9p_sRbgvyVbiO83M", data-maps-api-key-2="AIzaSyAVsRr4i3ovR45biSx0DoWRswL1kfdO9ZU")
+      .container
+        .row
+          .col-sm-6.overflow-hidden
+            .contect-info
+              h3.mb32.enddot-white Get In Touch
+              hr.div-left.mt32.mb32
+              h4.mb16
+                a(href="mailto:info@arteffectsinternational.com") info@arteffectsinternational.com
+
+              .col-sm-8.p0
+                h6.uppercase.mb0 Kuala Lumpur
+                p
+                  | B-3A-03, Neo Damansara
+                  | Jalan PJU 8/1, Damansara Perdana, 47820 Petaling Jaya, Selangor, Malaysia
+                  br
+                  a(href="callto:+60377271297") +603 7727 1297
+                  |  &middot; 
+                  a(href="callto:+60377251297") +603 7725 1297
+        // end of row
+      // end of container
+      
+    footer.footer-2.bg-dark
+      .container
+        .row
+          .col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.text-center
+            a(href="#")
+              img.image-xs.mb32.fade-on-hover(alt="Logo", src="/assets/images/afxlogo-white.png", style="height: 64px;")
+            h5.fade-1-4 Handcrafted by Arteffects International &#169; 2016
+            ul.list-inline.social-list.mb0
+              li
+                a(href='https://www.facebook.com/arteffectsinternational/')
+                  span.soc-facebook
+              li
+                a(href='https://www.instagram.com/arteffectsint/')
+                  span.soc-instagram
+              li
+                a(href='https://twitter.com/arteffectsint')
+                  span.soc-twitter
+              li
+                a(href='https://www.youtube.com/user/ArteffectsSdnBhd')
+                  span.soc-youtube
+              li
+                a(href='https://vimeo.com/arteffectsinternational')
+                  span.soc-vimeo
+
+        // end of row
+      // end of container
