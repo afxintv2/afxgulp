@@ -179,8 +179,8 @@ module.exports.modernizr = {
       'html5printshiv',
       'testProp',
       'fnBind'
-    ]
-    // excludeTests: ['hidden']
+    ],
+    excludeTests: ['hidden']
   }
 };
 
