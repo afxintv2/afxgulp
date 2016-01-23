@@ -11,13 +11,17 @@ block content
         img.background-image(alt="image", src="/assets/images/hero1.jpg")
       .container.v-align-transform
         .row
-          .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1.text-center
+          .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1
             h3.mb56.mb-xs-24
               | Arteffects International is a 
               b digital design collective &#38; production house,
               |  with experiences in 
               b film scoring, artwork design, and media productions.
+
             a.btn.btn-lg.btn-white.mb0.inner-link(href="#about") Get to know us better
+            a.btn.btn-lg.btn-white.mb0.inner-link(href="//cdnasyid.com")
+              i.pe-7s-cart
+              |  CDNasyid.com
         // end of row
       // end of container
       
@@ -25,24 +29,25 @@ block content
     section.pt180.pb180.pt-xs-80.pb-xs-80
       .container
         .row
-          .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1.text-center
-            h3.mb40.mb-xs-32 A small agency founded on the principles of Honesty, Clarity, Simplicity.
+          .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1.text-xs-center
+            h3.mb40.mb-xs-32 A small media agency founded on the principles of Honesty, Clarity, Simplicity.
             p.lead.mb0
               | These qualities is what made us, us. And we are proud of it. 
         // end of row
       // end of container
       
     a#work
-    section.pt0.pb0.pt-xs-80.bg-secondary.image-zoom
+    section.pt0.pb0.pt-xs-80.bg-primary.image-zoom
       .container
         .row
-          .col-md-5.col-sm-6.mt104.mt-sm-80.mt-xs-0.text-center-xs.mb-xs-40
-            h5.uppercase.enddot
+          .col-md-5.col-sm-6.mt104.mt-sm-80.mt-xs-0.mb-xs-40
+            h5.uppercase
               strong Music Production
+            hr.div.div-left.div-white
             h4.mb120.mb-xs-80 We are passionate with our talents and skills. Let's create something together.
             //- a.btn.btn-lg(href="#") View Case Study
           .col-sm-4.col-md-push-2
-            img(alt="Pic", src="/assets/images/sec4.png")
+            img(alt="Pic", src="/assets/images/sections/mic.png")
         // end of row
       // end of container
 
@@ -52,64 +57,54 @@ block content
       .container
         .row
           .col-md-6
-            h5.uppercase.enddot-white
+            h5.uppercase
               strong Event Management
+            hr.div.div-left
             h4.mb120.mb-xs-80 We worked with multitude of clients to produce concerts and shows.
             //- a.btn.btn-lg.btn-filled(href="#") View Case Study
         // end of row
       // end of container
   
     a#team
-    section.bg-secondary.pt120.pb120.pt-xs-80.pb-xs-80
-      .container.text-center
-        h3.mb48.mb-xs-32.enddot Our Team
+    section.pt120.pb120.pt-xs-80.pb-xs-80
+      .container
+        h5.uppercase.mb0
+          strong Passion. Dedication. Determination.
+        h1.mb48.mb-xs-32.enddot.raleway.large Our Team
 
-        .team-slider.owl-carouselxxx
+        .team-slider.owl-carousel.owl-theme
           each person in team
-            .person.col-md-4.col-sm-6.col-xs-12
-              img.img-responsive(src="/assets/images/faces/#{person.avatar}", alt="")
-            
+            .person.item.image-bg
+              .person-img
+                img.img-responsive(src="/assets/images/faces/#{person.avatar}", alt="")
+                .person-contact
+                  .inner.text-white.text-xs-center
+                    ul.list-inline.social-list.mb0
+                      if person.social.facebook
+                        li.list-inline-item
+                          a.text-white(href='https://www.facebook.com/#{person.social.facebook}/')
+                            span.soc-facebook
+                      if person.social.instagram
+                        li.list-inline-item
+                          a.text-white(href='https://www.instagram.com/#{person.social.instagram}/')
+                            span.soc-instagram
+                      if person.social.twitter
+                        li.list-inline-item
+                          a.text-white(href='https://twitter.com/#{person.social.twitter}')
+                            span.soc-twitter
+
+
+                    hr.div.m-t-1.m-b-1
+                    a.text-white(href="mailto:#{person.social.email}")!= person.social.email
+              .person-info.bg-dark.text-xs-center
+                h5.montserrat.uppercase.mb0
+                  != person.name
+                h6.montserrat.uppercase.fade-half.mb0
+                  != person.pos
 
         // end of row
       // end of container
-    //-   
-    //- section.bg-primary
-    //-   .container
-    //-     .row
-    //-       .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1.text-center.overflow-hidden
-    //-         h3.uppercase.text-center.mb32 Selected Clients
-    //-         hr.div.mt32.mb32
-    //-         .col-sm-6
-    //-           ul
-    //-             li
-    //-               h6.uppercase.mb8 Apple
-    //-             li
-    //-               h6.uppercase.mb8 Acorn Technology
-    //-             li
-    //-               h6.uppercase.mb8 Google
-    //-             li
-    //-               h6.uppercase.mb8 Gourmet Traveller
-    //-             li
-    //-               h6.uppercase.mb8 Broadsheet
-    //-             li
-    //-               h6.uppercase.mb8 Padre Food Co.
-    //-         .col-sm-6
-    //-           ul
-    //-             li
-    //-               h6.uppercase.mb8 BOSE
-    //-             li
-    //-               h6.uppercase.mb8 Kilgour Wines
-    //-             li
-    //-               h6.uppercase.mb8 University of Victoria
-    //-             li
-    //-               h6.uppercase.mb8 MOMA NYC
-    //-             li
-    //-               h6.uppercase.mb8 Belltower Ltd.
-    //-             li
-    //-               h6.uppercase.mb8 Bowers &#38; Wilkins
-    //-     // end of row
-    //-   // end of container
-      
+
     a#contact
     section.pt120.pb120.image-bg
       .map-canvas(
@@ -118,27 +113,26 @@ block content
         data-maps-api-key="AIzaSyCfo_V3gmpPm1WzJEC9p_sRbgvyVbiO83M", data-maps-api-key-2="AIzaSyAVsRr4i3ovR45biSx0DoWRswL1kfdO9ZU")
       .container
         .row
-          .col-sm-6.overflow-hidden.contact-info.pt16
-            h3.mb32.enddot Get In Touch
+          .col-md-5.contact-info.pt16.pb16
+            h1.mb32.enddot.raleway Get In Touch
             h4.mb16
               a(href="mailto:info@arteffectsinternational.com") info@arteffectsinternational.com
 
-            .col-sm-8.p0
-              h6.uppercase.mb0 Malaysia
-              p
-                | B-3A-03, Neo Damansara
-                | Jalan PJU 8/1, Damansara Perdana, 47820 Petaling Jaya, Selangor, Malaysia
-                br
-                a(href="callto:+60377271297") +603 7727 1297
-                |  &middot; 
-                a(href="callto:+60377251297") +603 7725 1297
+            h6.uppercase.mb0 Malaysia
+            p
+              | B-3A-03, Neo Damansara
+              | Jalan PJU 8/1, Damansara Perdana, 47820 Petaling Jaya, Selangor, Malaysia
+              br
+              a(href="callto:+60377271297") +603 7727 1297
+              |  &middot; 
+              a(href="callto:+60377251297") +603 7725 1297
         // end of row
       // end of container
       
     footer.footer-2.bg-dark
       .container
         .row
-          .col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.text-center
+          .col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.text-xs-center
             a(href="#")
               img.image-xs.mb32.fade-on-hover(alt="Logo", src="/assets/images/afxlogo-white.png", style="height: 64px;")
             h5.fade-1-4 

@@ -25,30 +25,30 @@ head
   meta(name="author", content="@wansaleh")
   meta(name="viewport", content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0")
 
-  link(rel="apple-touch-icon", sizes="57x57", href="/assets/icons/apple-touch-icon-57x57.png")
-  link(rel="apple-touch-icon", sizes="60x60", href="/assets/icons/apple-touch-icon-60x60.png")
-  link(rel="apple-touch-icon", sizes="72x72", href="/assets/icons/apple-touch-icon-72x72.png")
-  link(rel="apple-touch-icon", sizes="76x76", href="/assets/icons/apple-touch-icon-76x76.png")
-  link(rel="apple-touch-icon", sizes="114x114", href="/assets/icons/apple-touch-icon-114x114.png")
-  link(rel="apple-touch-icon", sizes="120x120", href="/assets/icons/apple-touch-icon-120x120.png")
-  link(rel="apple-touch-icon", sizes="144x144", href="/assets/icons/apple-touch-icon-144x144.png")
-  link(rel="apple-touch-icon", sizes="152x152", href="/assets/icons/apple-touch-icon-152x152.png")
-  link(rel="apple-touch-icon", sizes="180x180", href="/assets/icons/apple-touch-icon-180x180.png")
-  link(rel="icon", type="image/png", href="/assets/icons/favicon-32x32.png", sizes="32x32")
-  link(rel="icon", type="image/png", href="/assets/icons/android-chrome-192x192.png", sizes="192x192")
-  link(rel="icon", type="image/png", href="/assets/icons/favicon-96x96.png", sizes="96x96")
-  link(rel="icon", type="image/png", href="/assets/icons/favicon-16x16.png", sizes="16x16")
-  link(rel="manifest", href="/assets/icons/manifest.json")
-  link(rel="shortcut icon", href="/assets/icons/favicon.ico")
+  link(rel="apple-touch-icon", sizes="57x57", href="/assets/images/favicons/apple-touch-icon-57x57.png")
+  link(rel="apple-touch-icon", sizes="60x60", href="/assets/images/favicons/apple-touch-icon-60x60.png")
+  link(rel="apple-touch-icon", sizes="72x72", href="/assets/images/favicons/apple-touch-icon-72x72.png")
+  link(rel="apple-touch-icon", sizes="76x76", href="/assets/images/favicons/apple-touch-icon-76x76.png")
+  link(rel="apple-touch-icon", sizes="114x114", href="/assets/images/favicons/apple-touch-icon-114x114.png")
+  link(rel="apple-touch-icon", sizes="120x120", href="/assets/images/favicons/apple-touch-icon-120x120.png")
+  link(rel="apple-touch-icon", sizes="144x144", href="/assets/images/favicons/apple-touch-icon-144x144.png")
+  link(rel="apple-touch-icon", sizes="152x152", href="/assets/images/favicons/apple-touch-icon-152x152.png")
+  link(rel="apple-touch-icon", sizes="180x180", href="/assets/images/favicons/apple-touch-icon-180x180.png")
+  link(rel="icon", type="image/png", href="/assets/images/favicons/favicon-32x32.png", sizes="32x32")
+  link(rel="icon", type="image/png", href="/assets/images/favicons/android-chrome-192x192.png", sizes="192x192")
+  link(rel="icon", type="image/png", href="/assets/images/favicons/favicon-96x96.png", sizes="96x96")
+  link(rel="icon", type="image/png", href="/assets/images/favicons/favicon-16x16.png", sizes="16x16")
+  link(rel="manifest", href="/assets/images/favicons/manifest.json")
+  link(rel="shortcut icon", href="/assets/images/favicons/favicon.ico")
   meta(name="msapplication-TileColor", content="#2b5797")
-  meta(name="msapplication-TileImage", content="/assets/icons/mstile-144x144.png")
-  meta(name="msapplication-config", content="/assets/icons/browserconfig.xml")
+  meta(name="msapplication-TileImage", content="/assets/images/favicons/mstile-144x144.png")
+  meta(name="msapplication-config", content="/assets/images/favicons/browserconfig.xml")
   meta(name="theme-color", content="#ffffff")
   meta(name="apple-mobile-web-app-capable", content="yes")
   meta(name="apple-touch-fullscreen", content="yes")
   meta(name="apple-mobile-web-app-status-bar-style", content="default")
 
-  //- build:css /assets/styles/vendor.min.css -->
+  //- build:css(app) /assets/styles/vendor.min.css -->
   // bower:css
   link(rel='stylesheet', href='../bower_components/owl.carousel/dist/assets/owl.carousel.css')
   // endbower
@@ -59,7 +59,7 @@ head
   //- endbuild -->
 
   //- build:js(.tmp) /assets/scripts/head.min.js -->
-  script(src="/assets/scripts/plugins/modernizr.js")
+  script(src='/assets/scripts/plugins/modernizr.js')
   //- endbuild -->
   
 body(class=bodyClass, id="page-#{pageId}")
@@ -70,34 +70,34 @@ body(class=bodyClass, id="page-#{pageId}")
 
   block scripts
 
-  //- build:js(./app/) /assets/scripts/vendor.min.js -->
+  //- build:js(app) /assets/scripts/vendor.min.js -->
   // bower:js
   script(src='../bower_components/jquery/dist/jquery.js')
   script(src='../bower_components/jquery.fitvids/jquery.fitvids.js')
   script(src='../bower_components/waitForImages/src/jquery.waitforimages.js')
   script(src='../bower_components/isotope/dist/isotope.pkgd.js')
-  script(src='../bower_components/jquery-unorphanize/unorphanize.jquery.js')
   script(src='../bower_components/moment/moment.js')
-  script(src='../bower_components/vimeo-jquery-api/dist/jquery.vimeo.api.js')
   script(src='../bower_components/fastclick/lib/fastclick.js')
+  script(src='../bower_components/jquery.easing/js/jquery.easing.js')
   script(src='../bower_components/owl.carousel/dist/owl.carousel.js')
-  script(src='../bower_components/bootstrap-sass/assets/javascripts/bootstrap.js')
   // endbower
-
+  script(src='/assets/scripts/foundry/tether.js')
+  script(src='/assets/scripts/foundry/bootstrap4.js')
+  script(src='/assets/scripts/foundry/flickr.js')
+  script(src='/assets/scripts/foundry/flexslider.min.js')
+  script(src='/assets/scripts/foundry/lightbox.min.js')
+  script(src='/assets/scripts/foundry/masonry.min.js')
+  script(src='/assets/scripts/foundry/twitterfetcher.min.js')
+  script(src='/assets/scripts/foundry/spectragram.min.js')
+  script(src='/assets/scripts/foundry/ytplayer.min.js')
+  script(src='/assets/scripts/foundry/countdown.min.js')
+  script(src='/assets/scripts/foundry/smooth-scroll.min.js')
+  script(src='/assets/scripts/foundry/parallax.js')
   //- endbuild -->
 
   //- build:js(.tmp) /assets/scripts/main.min.js -->
-  script(src="/assets/scripts/foundry/flickr.js")
-  script(src="/assets/scripts/foundry/flexslider.min.js")
-  script(src="/assets/scripts/foundry/lightbox.min.js")
-  script(src="/assets/scripts/foundry/masonry.min.js")
-  script(src="/assets/scripts/foundry/twitterfetcher.min.js")
-  script(src="/assets/scripts/foundry/spectragram.min.js")
-  script(src="/assets/scripts/foundry/ytplayer.min.js")
-  script(src="/assets/scripts/foundry/countdown.min.js")
-  script(src="/assets/scripts/foundry/smooth-scroll.min.js")
-  script(src="/assets/scripts/foundry/parallax.js")
-  script(src="/assets/scripts/foundry/scripts.js")
+  script(src='/assets/scripts/foundry/scripts.js')
+  script(src='/assets/scripts/site.js')
   //- endbuild -->
   
   //- script.

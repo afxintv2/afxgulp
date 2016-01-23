@@ -1,7 +1,7 @@
 {
   "team": [
     {
-      "avatar": "hh.png",
+      "avatar": "hh.jpg",
       "name": "Hafiz Hamidun",
       "pos": "Chairman &amp; Creative Director",
       "social": {
@@ -12,7 +12,7 @@
       }
     },
     {
-      "avatar": "shima.png",
+      "avatar": "shima.jpg",
       "name": "Shima Uzir",
       "pos": "Director, Financial Department",
       "social": {
@@ -23,9 +23,9 @@
       }
     },
     {
-      "avatar": "kojem.png",
+      "avatar": "kojem.jpg",
       "name": "Huzaimi Zaini",
-      "pos": "Head, A &amp; R Department",
+      "pos": "Head, A&amp;R Department",
       "social": {
         "facebook": "huzaimi.zaini",
         "twitter": "Huzaimi_NSH",
@@ -34,9 +34,9 @@
       }
     },
     {
-      "avatar": "wan.png",
+      "avatar": "wan.jpg",
       "name": "Wan Saleh",
-      "pos": "Arranger &amp; Studio Engineer",
+      "pos": "Head, Studio Department",
       "social": {
         "facebook": "wansaleh",
         "twitter": "wansaleh",
@@ -45,38 +45,7 @@
       }
     },
     {
-      "avatar": "khidir.png",
-      "name": "Khidir Rahim",
-      "pos": "Designer, Graphic Department",
-      "social": {
-        "facebook": "muhammad.khidir.7",
-        "instagram": "muhd_khidir",
-        "email": "khidir@arteffectsinternational.com"
-      }
-    },
-    {
-      "avatar": "taq.png",
-      "name": "Nurtaqwa Othman",
-      "pos": "Designer, Photographer",
-      "social": {
-        "facebook": "https://www.facebook.com/NurtaQwaOthman",
-        "instagram": "taqo_dgs",
-        "email": "taqwa@arteffectsinternational.com"
-      }
-    },
-    {
-      "avatar": "alan.png",
-      "name": "Azlan Al-Bukhary",
-      "pos": "Head, Public Relations &amp; Promotions",
-      "social": {
-        "facebook": "azlanalbukhari",
-        "twitter": "azlanalbukhary",
-        "instagram": "azlanalbukhary",
-        "email": "wansaleh@arteffectsinternational.com"
-      }
-    },
-    {
-      "avatar": "aizat.png",
+      "avatar": "aizat.jpg",
       "name": "Aizat Jaafar",
       "pos": "Head, Events Department",
       "social": {
@@ -87,7 +56,38 @@
       }
     },
     {
-      "avatar": "fj.png",
+      "avatar": "alan.jpg",
+      "name": "Azlan Al-Bukhary",
+      "pos": "Head, P.R. &amp; Promotions",
+      "social": {
+        "facebook": "azlanalbukhari",
+        "twitter": "azlanalbukhary",
+        "instagram": "azlanalbukhary",
+        "email": "azlan@arteffectsinternational.com"
+      }
+    },
+    {
+      "avatar": "khidir.jpg",
+      "name": "Khidir Rahim",
+      "pos": "Designer, Photographer",
+      "social": {
+        "facebook": "muhammad.khidir.7",
+        "instagram": "muhd_khidir",
+        "email": "khidir@arteffectsinternational.com"
+      }
+    },
+    {
+      "avatar": "taq.jpg",
+      "name": "Nurtaqwa Othman",
+      "pos": "Designer, Photographer",
+      "social": {
+        "facebook": "https://www.facebook.com/NurtaQwaOthman",
+        "instagram": "taqo_dgs",
+        "email": "taqwa@arteffectsinternational.com"
+      }
+    },
+    {
+      "avatar": "fj.jpg",
       "name": "Fairus Jamil",
       "pos": "Manager, Sales Department",
       "social": {
@@ -98,7 +98,7 @@
       }
     },
     {
-      "avatar": "husna.png",
+      "avatar": "husna.jpg",
       "name": "Nurul Husna",
       "pos": "Executive, Sales Department",
       "social": {
@@ -109,7 +109,7 @@
       }
     },
     {
-      "avatar": "syam.png",
+      "avatar": "syam.jpg",
       "name": "Syam Zawawi",
       "pos": "Executive, Sales Department",
       "social": {
@@ -120,14 +120,14 @@
       }
     },
     {
-      "avatar": "harith.png",
+      "avatar": "harith.jpg",
       "name": "Harith Radzi",
       "pos": "Personal Assistant to HH",
       "social": {
         "facebook": "harithradzi",
         "twitter": "cikoy25",
         "instagram": "c1ko1",
-        "email": ""
+        "email": "harithradzi@gmail.com"
       }
     }
   ]

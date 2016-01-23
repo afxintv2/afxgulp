@@ -123,7 +123,8 @@ module.exports.copyIcons = {
 // Copy extras task config
 module.exports.copyExtras = {
   src: [
-    app + '/*.*',
+    // app + '/*.*',
+    app + '/*',
     '!' + app + '/*.html'
   ],
   dest: dist,
