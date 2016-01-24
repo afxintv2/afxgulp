@@ -6,7 +6,7 @@ var modRewrite = require('connect-modrewrite');
 module.exports.uglifyJs = process.env.UGLIFYJS || true; // to remove .min sufix edit template manually
 module.exports.minifyCss = process.env.MINIFYCSS || true; // to remove .min sufix edit template manually
 module.exports.cacheBust = process.env.CACHEBUST || true;
-module.exports.optimizeImages = process.env.OPTIMIZEIMAGES || true;
+module.exports.optimizeImages = process.env.optimizeImagesS || true;
 module.exports.lintJs = process.env.LINTJS || false;
 module.exports.prettyUrl = false;
 
@@ -161,6 +161,7 @@ module.exports.images = {
     progressive: true,
     interlaced: true,
     multipass: true,
+    optimizationLevel: 4,
     svgoPlugins: [{cleanupIDs: false}]
   }
 };

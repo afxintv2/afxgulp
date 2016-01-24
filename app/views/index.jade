@@ -54,7 +54,7 @@ block content
         // end of row
       // end of container
 
-    section.image-bg.overlay.overlay-heavy.p-t-6.p-b-6.p-t-xs-4.p-b-xs-4.parallax
+    section.image-bg.overlay.overlay-heavy.p-y-6.p-y-xs-4.parallax
       .background-image-holder
         img.background-image(alt="image", src="/assets/images/bg-events.jpg")
       .container
@@ -67,18 +67,38 @@ block content
             //- a.btn.btn-lg.btn-filled(href="#") View Case Study
         // end of row
       // end of container
-  
+
+    a#cdnasyid
+    section.bg-secondary.p-t-5.image-zoom
+      .container
+        .row.v-align-children
+          .col-md-6.col-sm-6.text-center.m-b-xs-2
+            img(alt="Screenshot", src="/assets/images/sections/cdnasyid.png")
+          .col-md-6.text-xs-center.text-sm-left
+            h1.m-b-2.m-b-xs-1.enddot.raleway Online Store
+            hr.div.div-left-sm.m-b-3
+
+            h6.uppercase.m-b-1 Buy International Islamic albums at your fingertips. 
+
+            h4 CDNasyid.com is a one-stop shop for all most wanted Nasyeed&nbsp;albums.
+
+            a.btn-filled.btn(href="//cdnasyid.com") Go to CDNasyid.com
+      // end of row
+    // end of container
+
+
     a#team
     section.p-t-6.p-b-4.p-t-xs-4.p-b-xs-0
       .container.text-xs-center.text-sm-left
         .row
           .col-md-6
-            h5.uppercase.m-b-0
+            h6.uppercase.m-b-0
               strong Passion. Dedication. Determination.
             h1.m-b-3.m-b-xs-2.enddot.raleway.large Our Team
+            hr.div.m-y-3.hidden-sm-up
 
           .col-md-6
-            h4.m-b-4 The people running Arteffects International is a close-knit team. In fact, we are proud to call our group a family.
+            h4.m-b-4 We are a close-knit team. In fact, we are proud to call our group a family.
 
         .row
           .team-slick
@@ -126,24 +146,25 @@ block content
         data-maps-api-key="AIzaSyCfo_V3gmpPm1WzJEC9p_sRbgvyVbiO83M", data-maps-api-key-2="AIzaSyAVsRr4i3ovR45biSx0DoWRswL1kfdO9ZU")
       .container
         .row
-          .col-md-6.contact-info.p-y-4
-            hr.div.m-b-5.hidden-sm-up
+          .col-md-6.contact-info.p-t-6.p-y-4.p-b-xs-3.p-r-2.p-r-xs-1.text-xs-center.text-sm-left
             h5.uppercase.m-b-0
               strong We want to hear from you.
             h1.m-b-2.enddot.raleway.large Get In Touch
-            h4.m-b-1
-              a(href="mailto:info@arteffectsinternational.com") info@arteffectsinternational.com
+            hr.div.div-left-sm.m-b-3
 
             h6.uppercase.m-b-0 Malaysia
             p
               | B-3A-03, Neo Damansara
-              | Jalan PJU 8/1, Damansara Perdana, 47820 Petaling Jaya, Selangor, Malaysia
               br
+              | Jalan PJU 8/1, Damansara Perdana,
+              br
+              | 47820 Petaling Jaya, Selangor, Malaysia
+            p
               a(href="callto:+60377271297") +603 7727 1297
-              |  &middot; 
+              | &nbsp;&nbsp;|&nbsp;&nbsp;
               a(href="callto:+60377251297") +603 7725 1297
 
-            .contact-form            
+            .contact-form.p-t-2
               form.form-email(data-success="Thanks for your submission, we will be in touch shortly.", data-error="Please fill all fields correctly.")
                 input.validate-required(type="text", name="name", placeholder="Your Name")
                 input.validate-required.validate-email(type="text", name="email", placeholder="Email Address")
