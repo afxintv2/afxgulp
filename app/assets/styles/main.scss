@@ -1,13 +1,14 @@
 @import "http://fonts.googleapis.com/css?family=Raleway:100,400,300,500,600,700|Poppins:300,400,600,700|Montserrat:400,700";
 
-// @import 'custom-variables';
 // @import "../../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap";
+@import 'custom-variables';
 @import "bootstrap4/bootstrap";
 
 @import "foundry/flexslider";
 @import "foundry/lightbox.min";
 @import "foundry/ytplayer";
 @import "_foundry";
+@import "_spacing";
 
 @import "fonts/font-awesome";
 @import "fonts/themify-icons";
@@ -80,8 +81,10 @@ hr.div {
     margin-left: 0;
   }
 
-  &.div-right {
-    margin-right: 0;
+  @include media-breakpoint-up(sm) {
+    &.div-left-sm {
+      margin-left: 0;
+    }
   }
 
   &.div-white {
@@ -90,18 +93,25 @@ hr.div {
 }
 
 // Team
-.team-slider {
+.team-slick {
+  margin: 0;
+
   .person {
     position: relative;
     outline: none;
     overflow: hidden;
+    padding: 0 8px;
+
+    @include media-breakpoint-down(sm) {
+      padding: 0;
+    }
 
     .person-img {
       position: relative;
 
       .person-contact {
         position: absolute;
-        background: rgba($bg-dark, .6);
+        background: rgba($bg-dark, .4);
         width: 100%;
         height: 100%;
         top: 0;
@@ -111,16 +121,23 @@ hr.div {
 
         .inner {
           position: absolute;
-          top: 50%;
+          // top: 50%;
+          bottom: 0;
           left: 50%;
-          transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, 0, 0);
+        }
+
+        a {
+          span {
+            color: #fff;
+            transition: all .3s ease;
+          }
+
+          &:hover span {
+            color: $color-primary;
+          }
         }
       }
-    }
-
-    .person-info {
-      padding: 24px;
-      color: #fff;
     }
 
     &:hover {
@@ -130,82 +147,116 @@ hr.div {
     }
   }
 
-  .owl-nav {
-    margin-top: 10px;
-    text-align: center;
-    -webkit-tap-highlight-color: transparent;
+  .arrow-prev,
+  .arrow-next {
+    position: absolute;
+    background: none;
+    font-size: 5em;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    transition: all .3s ease;
+    // z-index: 2000;
+    bottom: -18px;
+    outline: none;
+    color: $bg-dark;
 
-    [class*='owl-'] {
-      display: inline-block;
-      cursor: pointer;
-      position: absolute;
-    	display: inline-block;
-    	font-size: 3em;
-      color: $bg-dark;
-      border: 2px solid $bg-dark;
-      border-radius: 100%;
-      transition: all .2s ease;
-
-      &:hover {
-        border-color: $color-primary;
-        color: $color-primary;
-      }
-    }
-
-    .disabled {
-      opacity: 0.5;
-      cursor: default;
-    }
-
-    &.disabled + .owl-dots {
-      margin-top: 10px;
-    }
-
-    .owl-prev {
-      left: -50px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-    .owl-next {
-      right: -50px;
-      top: 50%;
-      transform: translateY(-50%);
+    span {
+      transition: all .3s ease;
     }
   }
 
-  .owl-dots {
-    text-align: center;
-    -webkit-tap-highlight-color: transparent;
+  .arrow-prev {
+    left: 0;
 
-    .owl-dot {
-      display: inline-block;
-      zoom: 1;
-      *display: inline;
+    &:hover {
+      span {
+        transform: translateX(-10px);
+      }
+    }
+  }
+
+  .arrow-next {
+    right: 0;
+
+    &:hover {
+      span {
+        transform: translateX(10px);
+      }
+    }
+  }
+
+  // .arrow-prev
+
+  .slick-dots {
+    position: static;
+    margin: 2em auto;
+  }
+
+  .slick-dots li button {
+    border: 2px solid $bg-dark;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+
+    &:before {
+      position: absolute;
+      font-size: 0;
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: $bg-dark;
+      border-radius: 100%;
+      top: 4px;
+      left: 4px;
+      opacity: 0;
+      transition: all .3s ease;
     }
 
-    .owl-dot span {
-      position: relative;
-      width: 14px;
-      height: 14px;
-      margin: 8px;
-      border-top: 2px solid $bg-dark;
-      background: none;
-      display: block;
-      transition: all .2s ease;
+    &:hover:before {
+      opacity: 1;
     }
+  }
 
-    .owl-dot.active span,
-    .owl-dot:hover span {
-      border-color: $color-primary;
-    }
+  .slick-dots li.slick-active button:before {
+    opacity: 1;
+    background: $color-primary;
   }
 }
 
+.map-canvas {
+  a[href^="http://maps.google.com/maps"]{display:none !important}
+  a[href^="https://maps.google.com/maps"]{display:none !important}
 
-// Maps contact
-// @include media-breakpoint-down(sm) {
-  .contact-info {
-    background: rgba($bg-dark, .7);
+  .gmnoprint a,
+  .gmnoprint span,
+  .gm-style-cc {
+    display: none;
   }
-// }
+
+  .gmnoprint div {
+    background: none !important;
+  }
+}
+
+.contact-info {
+  background: rgba($bg-dark, .85);
+
+  .form-error,
+  .form-success {
+    margin: 0 auto 1rem;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  textarea {
+    outline: none;
+    background: rgba($bg-dark, .1);
+    border: 2px solid lighten($bg-dark, 5);
+    color: #fff;
+
+    &:focus {
+      border-color: lighten($bg-dark, 20);
+    }
+  }
+}

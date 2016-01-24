@@ -6,119 +6,135 @@ block vars
 block content
 
   .main-container
-    section.pt240.pb240.pt-xs-120.pb-xs-80.overlay.overlay-heavy.image-bg.parallax.cover.fullscreen
+    section.p-y-10.p-y-xs-4.overlay.overlay-heavy.image-bg.parallax.cover.fullscreen
       .background-image-holder
         img.background-image(alt="image", src="/assets/images/hero1.jpg")
       .container.v-align-transform
         .row
-          .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1
-            h3.mb56.mb-xs-24
+          .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1.text-xs-center.text-sm-left
+            h3.m-b-3.m-b-xs-2
               | Arteffects International is a 
               b digital design collective &#38; production house,
               |  with experiences in 
               b film scoring, artwork design, and media productions.
 
-            a.btn.btn-lg.btn-white.mb0.inner-link(href="#about") Get to know us better
-            a.btn.btn-lg.btn-white.mb0.inner-link(href="//cdnasyid.com")
+            a.btn.btn-lg.m-b-1.inner-link(href="#about") Get to know us better
+            a.btn.btn-lg.btn-filled.m-b-1(href="//cdnasyid.com")
               i.pe-7s-cart
               |  CDNasyid.com
         // end of row
       // end of container
       
     a#about
-    section.pt180.pb180.pt-xs-80.pb-xs-80
+    section.p-y-8.p-y-xs-4
       .container
         .row
           .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1.text-xs-center
-            h3.mb40.mb-xs-32 A small media agency founded on the principles of Honesty, Clarity, Simplicity.
-            p.lead.mb0
+            h3.m-b-3.m-b-xs-2 
+              | A media agency founded in 2006 by 
+              a(href="//hafizhamidun.com") Hafiz&nbsp;Hamidun
+              | , singer-songwriter &amp; producer, on the principles of Honesty, Clarity, Simplicity.
+            p.lead.m-b-0
               | These qualities is what made us, us. And we are proud of it. 
         // end of row
       // end of container
       
     a#work
-    section.pt0.pb0.pt-xs-80.bg-primary.image-zoom
+    section.p-y-0.p-t-xs-4.bg-primary.image-zoom
       .container
         .row
-          .col-md-5.col-sm-6.mt104.mt-sm-80.mt-xs-0.mb-xs-40
+          .col-md-5.col-sm-6.m-t-6.m-t-sm-4.m-t-xs-0.m-b-xs-3.text-xs-center.text-sm-left
             h5.uppercase
               strong Music Production
-            hr.div.div-left.div-white
-            h4.mb120.mb-xs-80 We are passionate with our talents and skills. Let's create something together.
+            hr.div.div-left-sm.div-white
+            h4.m-b-6.m-b-xs-4 We are passionate with our talents and skills. Let's create something together.
             //- a.btn.btn-lg(href="#") View Case Study
-          .col-sm-4.col-md-push-2
+          .col-sm-4.col-md-push-2.text-xs-center
             img(alt="Pic", src="/assets/images/sections/mic.png")
         // end of row
       // end of container
 
-    section.image-bg.overlay.pt120.pb120.pt-xs-80.pb-xs-80.parallax
+    section.image-bg.overlay.overlay-heavy.p-t-6.p-b-6.p-t-xs-4.p-b-xs-4.parallax
       .background-image-holder
         img.background-image(alt="image", src="/assets/images/bg-events.jpg")
       .container
         .row
-          .col-md-6
+          .col-md-6.text-xs-center.text-sm-left
             h5.uppercase
               strong Event Management
-            hr.div.div-left
-            h4.mb120.mb-xs-80 We worked with multitude of clients to produce concerts and shows.
+            hr.div.div-left-sm
+            h4.m-b-6.m-b-xs-4 We've worked with multitude of clients to produce concerts and shows.
             //- a.btn.btn-lg.btn-filled(href="#") View Case Study
         // end of row
       // end of container
   
     a#team
-    section.pt120.pb120.pt-xs-80.pb-xs-80
-      .container
-        h5.uppercase.mb0
-          strong Passion. Dedication. Determination.
-        h1.mb48.mb-xs-32.enddot.raleway.large Our Team
+    section.p-t-6.p-b-4.p-t-xs-4.p-b-xs-0
+      .container.text-xs-center.text-sm-left
+        .row
+          .col-md-6
+            h5.uppercase.m-b-0
+              strong Passion. Dedication. Determination.
+            h1.m-b-3.m-b-xs-2.enddot.raleway.large Our Team
 
-        .team-slider.owl-carousel.owl-theme
-          each person in team
-            .person.item.image-bg
-              .person-img
-                img.img-responsive(src="/assets/images/faces/#{person.avatar}", alt="")
-                .person-contact
-                  .inner.text-white.text-xs-center
-                    ul.list-inline.social-list.mb0
-                      if person.social.facebook
-                        li.list-inline-item
-                          a.text-white(href='https://www.facebook.com/#{person.social.facebook}/')
-                            span.soc-facebook
-                      if person.social.instagram
-                        li.list-inline-item
-                          a.text-white(href='https://www.instagram.com/#{person.social.instagram}/')
-                            span.soc-instagram
-                      if person.social.twitter
-                        li.list-inline-item
-                          a.text-white(href='https://twitter.com/#{person.social.twitter}')
-                            span.soc-twitter
+          .col-md-6
+            h4.m-b-4 The people running Arteffects International is a close-knit team. In fact, we are proud to call our group a family.
 
-
-                    hr.div.m-t-1.m-b-1
-                    a.text-white(href="mailto:#{person.social.email}")!= person.social.email
-              .person-info.bg-dark.text-xs-center
-                h5.montserrat.uppercase.mb0
-                  != person.name
-                h6.montserrat.uppercase.fade-half.mb0
-                  != person.pos
+        .row
+          .team-slick
+            each person in team
+              .person.item
+                .person-img
+                  img.img-responsive(src="/assets/images/faces/#{person.avatar}", alt="")
+                  .person-contact
+                    .inner.p-y-2.text-xs-center
+                      ul.list-inline.m-b-0
+                        if person.social.facebook
+                          li.list-inline-item
+                            a(href='https://www.facebook.com/#{person.social.facebook}/')
+                              span.soc-facebook
+                        if person.social.instagram
+                          li.list-inline-item
+                            a(href='https://www.instagram.com/#{person.social.instagram}/')
+                              span.soc-instagram
+                        if person.social.twitter
+                          li.list-inline-item
+                            a(href='https://twitter.com/#{person.social.twitter}')
+                              span.soc-twitter
+                        if person.social.web
+                          li.list-inline-item
+                            a(href='#{person.social.web}/')
+                              span.ti-home
+                        if person.social.email
+                          li.list-inline-item
+                            a(href="mailto:#{person.social.email}")
+                              span.ti-email
+                .person-info.p-a-2.text-xs-center
+                  h5.montserrat.uppercase.m-b-0
+                    != person.name
+                  h6.montserrat.uppercase.fade-half.m-b-0
+                    != person.pos
 
         // end of row
       // end of container
 
     a#contact
-    section.pt120.pb120.image-bg
-      .map-canvas(
-        data-map-zoom="10", 
-        data-address="Jalan Iskandar,Kampung Bukit Kapar[nomarker];Neo Damansara",
+    section.image-bg.bg-dark.p-y-0
+      .map-canvas.hidden-xs-down(
+        data-map-zoom="11", 
+        data-address="3.166507, 101.408039[nomarker];Neo Damansara, Petaling Jaya",
         data-maps-api-key="AIzaSyCfo_V3gmpPm1WzJEC9p_sRbgvyVbiO83M", data-maps-api-key-2="AIzaSyAVsRr4i3ovR45biSx0DoWRswL1kfdO9ZU")
       .container
         .row
-          .col-md-5.contact-info.pt16.pb16
-            h1.mb32.enddot.raleway Get In Touch
-            h4.mb16
+          .col-md-6.contact-info.p-y-4
+            hr.div.m-b-5.hidden-sm-up
+            h5.uppercase.m-b-0
+              strong We want to hear from you.
+            h1.m-b-2.enddot.raleway.large Get In Touch
+            h4.m-b-1
               a(href="mailto:info@arteffectsinternational.com") info@arteffectsinternational.com
 
-            h6.uppercase.mb0 Malaysia
+            h6.uppercase.m-b-0 Malaysia
             p
               | B-3A-03, Neo Damansara
               | Jalan PJU 8/1, Damansara Perdana, 47820 Petaling Jaya, Selangor, Malaysia
@@ -126,20 +142,30 @@ block content
               a(href="callto:+60377271297") +603 7727 1297
               |  &middot; 
               a(href="callto:+60377251297") +603 7725 1297
+
+            .contact-form            
+              form.form-email(data-success="Thanks for your submission, we will be in touch shortly.", data-error="Please fill all fields correctly.")
+                input.validate-required(type="text", name="name", placeholder="Your Name")
+                input.validate-required.validate-email(type="text", name="email", placeholder="Email Address")
+                textarea.validate-required(name="message", rows="4", placeholder="Message")
+                input(type="text", name="_gotcha", style="display:none")
+                button(type="submit") Send Message
+
         // end of row
       // end of container
       
-    footer.footer-2.bg-dark
+    footer.footer-2.bg-dark.p-t-xs-0
       .container
         .row
           .col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.text-xs-center
+            hr.div.m-b-5.hidden-sm-up
             a(href="#")
-              img.image-xs.mb32.fade-on-hover(alt="Logo", src="/assets/images/afxlogo-white.png", style="height: 64px;")
+              img.image-xs.m-b-2.fade-on-hover(alt="Logo", src="/assets/images/afxlogo-white.png", style="height: 64px;")
             h5.fade-1-4 
               | Handcrafted with 
               span.fa.fa-heart.color-primary
               |  at Arteffects International &#169; 2016
-            ul.list-inline.social-list.mb0
+            ul.list-inline.social-list.m-b-0
               li.list-inline-item
                 a(href='https://www.facebook.com/arteffectsinternational/')
                   span.soc-facebook

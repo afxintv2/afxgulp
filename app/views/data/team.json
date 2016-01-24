@@ -3,12 +3,13 @@
     {
       "avatar": "hh.jpg",
       "name": "Hafiz Hamidun",
-      "pos": "Chairman &amp; Creative Director",
+      "pos": "CEO &amp; Managing Director",
       "social": {
         "facebook": "hafizhamidun",
         "twitter": "hafizhamidun",
         "instagram": "hafizhamidun",
-        "email": "newmedia@hafizhamidun.com"
+        "email": "newmedia@hafizhamidun.com",
+        "web": "//hafizhamidun.com"
       }
     },
     {
@@ -30,7 +31,19 @@
         "facebook": "huzaimi.zaini",
         "twitter": "Huzaimi_NSH",
         "instagram": "huzaimi_zaini",
-        "email": "huzaimi@arteffectsinternational.com"
+        "email": "huzaimi@arteffectsinternational.com",
+        "web": "//huzaimizaini.com"
+      }
+    },
+    {
+      "avatar": "fj.jpg",
+      "name": "Fairus Jamil",
+      "pos": "Manager, Sales Department",
+      "social": {
+        "facebook": "fairusjamil",
+        "twitter": "fairusjamil",
+        "instagram": "fairusjamil",
+        "email": "fairus@arteffectsinternational.com"
       }
     },
     {
@@ -41,7 +54,8 @@
         "facebook": "wansaleh",
         "twitter": "wansaleh",
         "instagram": "wansaleh",
-        "email": "wansaleh@arteffectsinternational.com"
+        "email": "wansaleh@arteffectsinternational.com",
+        "web": "//wansaleh.com"
       }
     },
     {
@@ -63,7 +77,8 @@
         "facebook": "azlanalbukhari",
         "twitter": "azlanalbukhary",
         "instagram": "azlanalbukhary",
-        "email": "azlan@arteffectsinternational.com"
+        "email": "azlan@arteffectsinternational.com",
+        "web": "//azlanalbukhary.com"
       }
     },
     {
@@ -81,20 +96,9 @@
       "name": "Nurtaqwa Othman",
       "pos": "Designer, Photographer",
       "social": {
-        "facebook": "https://www.facebook.com/NurtaQwaOthman",
+        "facebook": "NurtaQwaOthman",
         "instagram": "taqo_dgs",
         "email": "taqwa@arteffectsinternational.com"
-      }
-    },
-    {
-      "avatar": "fj.jpg",
-      "name": "Fairus Jamil",
-      "pos": "Manager, Sales Department",
-      "social": {
-        "facebook": "fairusjamil",
-        "twitter": "fairusjamil",
-        "instagram": "fairusjamil",
-        "email": "fairus@arteffectsinternational.com"
       }
     },
     {
@@ -115,19 +119,17 @@
       "social": {
         "facebook": "mohdsyamsuri26",
         "twitter": "syamunic",
-        "instagram": "syamzawawi",
-        "email": "syamunic@gmail.com"
+        "instagram": "syamzawawi"
       }
     },
     {
       "avatar": "harith.jpg",
       "name": "Harith Radzi",
-      "pos": "Personal Assistant to HH",
+      "pos": "Production Assistant",
       "social": {
         "facebook": "harithradzi",
         "twitter": "cikoy25",
-        "instagram": "c1ko1",
-        "email": "harithradzi@gmail.com"
+        "instagram": "c1ko1"
       }
     }
   ]

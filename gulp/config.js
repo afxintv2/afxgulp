@@ -109,7 +109,8 @@ module.exports.clean = [tmp, dist, '.publish', '.divshot-cache'];
 module.exports.copyFonts = {
   src: [
     path.join(app, fonts, '**/*'),
-    'bower_components/bootstrap-sass/assets/fonts/bootstrap/*'
+    'bower_components/bootstrap-sass/assets/fonts/bootstrap/*',
+    'bower_components/slick-carousel/slick/fonts/*'
   ],
   dest: path.join(dist, fonts)
 };

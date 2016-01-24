@@ -51,6 +51,8 @@ head
   //- build:css(app) /assets/styles/vendor.min.css -->
   // bower:css
   link(rel='stylesheet', href='../bower_components/owl.carousel/dist/assets/owl.carousel.css')
+  link(rel='stylesheet', href='../bower_components/slick-carousel/slick/slick.css')
+  link(rel='stylesheet', href='../bower_components/slick-carousel/slick/slick-theme.css')
   // endbower
   //- endbuild -->
   
@@ -80,23 +82,25 @@ body(class=bodyClass, id="page-#{pageId}")
   script(src='../bower_components/fastclick/lib/fastclick.js')
   script(src='../bower_components/jquery.easing/js/jquery.easing.js')
   script(src='../bower_components/owl.carousel/dist/owl.carousel.js')
+  script(src='../bower_components/slick-carousel/slick/slick.min.js')
   // endbower
-  script(src='/assets/scripts/foundry/tether.js')
-  script(src='/assets/scripts/foundry/bootstrap4.js')
-  script(src='/assets/scripts/foundry/flickr.js')
-  script(src='/assets/scripts/foundry/flexslider.min.js')
-  script(src='/assets/scripts/foundry/lightbox.min.js')
-  script(src='/assets/scripts/foundry/masonry.min.js')
-  script(src='/assets/scripts/foundry/twitterfetcher.min.js')
-  script(src='/assets/scripts/foundry/spectragram.min.js')
-  script(src='/assets/scripts/foundry/ytplayer.min.js')
-  script(src='/assets/scripts/foundry/countdown.min.js')
-  script(src='/assets/scripts/foundry/smooth-scroll.min.js')
-  script(src='/assets/scripts/foundry/parallax.js')
+  script(src='/assets/scripts/plugins/tether.js')
+  script(src='/assets/scripts/plugins/bootstrap4.js')
+  script(src='/assets/scripts/plugins/flickr.js')
+  script(src='/assets/scripts/plugins/flexslider.min.js')
+  script(src='/assets/scripts/plugins/lightbox.min.js')
+  script(src='/assets/scripts/plugins/masonry.min.js')
+  script(src='/assets/scripts/plugins/twitterfetcher.min.js')
+  script(src='/assets/scripts/plugins/spectragram.min.js')
+  script(src='/assets/scripts/plugins/ytplayer.min.js')
+  script(src='/assets/scripts/plugins/countdown.min.js')
+  script(src='/assets/scripts/plugins/smooth-scroll.min.js')
+  script(src='/assets/scripts/plugins/parallax.js')
+  script(src='/assets/scripts/plugins/retina.js')
   //- endbuild -->
 
   //- build:js(.tmp) /assets/scripts/main.min.js -->
-  script(src='/assets/scripts/foundry/scripts.js')
+  script(src='/assets/scripts/foundry.js')
   script(src='/assets/scripts/site.js')
   //- endbuild -->
   
