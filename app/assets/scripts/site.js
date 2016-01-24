@@ -1,5 +1,8 @@
 (function($) {
 
+	// retina: dense
+	$('img[data-2x]').dense();
+
 	// slick
 	$('.team-slick').slick({
 		infinite: true,
@@ -24,7 +27,7 @@
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	ga('create', gaID, 'auto');
+	ga('create', 'UA-66441440-1', 'auto');
 	ga('send', 'pageview');
 
 })(jQuery);

@@ -783,7 +783,7 @@ $(document).ready(function() {
 
 				jQuery.ajax({
 					type: "POST",
-					url: "//formspree.io/wansaleh@gmail.com",
+					url: "//formspree.io/info@arteffectsinternational.com",
 					data: thisForm.serialize() + "&url=" + window.location.href,
 					dataType: 'json',
 					success: function(response) {
