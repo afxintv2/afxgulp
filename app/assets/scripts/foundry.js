@@ -1041,7 +1041,6 @@ function updateNav() {
 		return;
 	}
 
-	// if (scrollY > mr_firstSectionHeight) {
 	if (scrollY > mr_firstSectionHeight) {
 		if (!mr_navScrolled) {
 			mr_nav.addClass('scrolled');

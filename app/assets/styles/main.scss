@@ -3,12 +3,13 @@
 // @import "../../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap";
 @import 'custom-variables';
 @import "bootstrap4/bootstrap";
+@import "_spacing";
 
 @import "foundry/flexslider";
 @import "foundry/lightbox.min";
 @import "foundry/ytplayer";
 @import "_foundry";
-@import "_spacing";
+@import "_timeline";
 
 @import "fonts/font-awesome";
 @import "fonts/themify-icons";
@@ -92,6 +93,10 @@ hr.div {
   }
 }
 
+nav.transparent .module.widget-handle {
+  border-left: 0 !important;
+}
+
 // Team
 .team-slick {
   margin: 0;
@@ -103,7 +108,7 @@ hr.div {
     padding: 0 8px;
 
     @include media-breakpoint-down(sm) {
-      padding: 0;
+      // padding: 0;
     }
 
     .person-img {

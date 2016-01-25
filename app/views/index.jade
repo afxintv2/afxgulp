@@ -6,7 +6,8 @@ block vars
 block content
 
   .main-container
-    section.p-y-10.p-y-xs-4.overlay.overlay-heavy.image-bg.parallax.cover.fullscreen
+
+    section.cover.fullscreen.p-y-6.overlay.overlay-heavy.image-bg.parallax
       .background-image-holder
         img.background-image(alt="image", src="/assets/images/hero1.jpg")
       .container.v-align-transform
@@ -16,7 +17,7 @@ block content
               | Arteffects International is a 
               b digital design collective &#38; production house,
               |  with experiences in 
-              b film scoring, artwork design, and media productions.
+              b.enddot film scoring, artwork design, and media productions
 
             a.btn.btn-lg.m-b-1.inner-link(href="#about") Get to know us better
         // end of row
@@ -30,23 +31,26 @@ block content
             h3.m-b-3.m-b-xs-2 
               | A media agency founded in 2006 by 
               a(href="//hafizhamidun.com") Hafiz&nbsp;Hamidun
-              | , singer-songwriter &amp; producer, on the principles of Honesty, Clarity, Simplicity.
+              | , singer-songwriter &amp; music producer, on the  principles of 
+              b Classic, Clarity and Intriguing
             p.lead.m-b-0
-              | These qualities is what made us, us. And we are proud of it. 
+              | These qualities are things that made us, us. And we are very proud of it. 
         // end of row
       // end of container
-      
+
+    include modules/_timeline
+
     a#work
     section.p-y-0.p-t-xs-4.bg-primary.image-zoom
       .container
         .row
-          .col-md-5.col-sm-6.m-t-6.m-t-sm-4.m-t-xs-0.m-b-xs-3.text-xs-center.text-sm-left
+          .col-md-6.m-t-6.m-t-sm-4.m-t-xs-0.m-b-xs-3.text-xs-center.text-sm-left
             h5.uppercase
-              strong Music Production
+              strong.enddot-white Music Production
             hr.div.div-left-sm.div-white
-            h4.m-b-6.m-b-xs-4 We are passionate with our talents and skills. Let's create something together.
+            h4.m-b-6.m-b-xs-4 We are passionate with our talents and skills. With music we were able to touch millions. And now we want to do it again. Let's create something together.
             //- a.btn.btn-lg(href="#") View Case Study
-          .col-sm-4.col-md-push-2.text-xs-center
+          .col-md-4.col-md-offset-2.text-xs-center
             img(alt="", src="/assets/images/sections/mic.png", data-2x="/assets/images/sections/mic_2x.png")
         // end of row
       // end of container
@@ -58,7 +62,7 @@ block content
         .row
           .col-md-6.text-xs-center.text-sm-left
             h5.uppercase
-              strong Event Management
+              strong.enddot Event Management
             hr.div.div-left-sm
             h4.m-b-6.m-b-xs-4 We've worked with multitude of clients to produce concerts and shows.
             //- a.btn.btn-lg.btn-filled(href="#") View Case Study
@@ -69,7 +73,7 @@ block content
     section.p-t-5
       .container
         .row.v-align-children
-          .col-md-6.col-sm-6.text-center.m-b-xs-2
+          .col-md-6.text-center.m-b-xs-2
             img(alt="", src="/assets/images/sections/cdnasyid.png", data-2x="/assets/images/sections/cdnasyid_2x.png")
           .col-md-6.text-xs-center.text-sm-left
             h1.m-b-2.m-b-xs-1.enddot.raleway Online Store
@@ -92,10 +96,9 @@ block content
             h6.uppercase.m-b-0
               strong Passion. Dedication. Determination.
             h1.m-b-3.m-b-xs-2.enddot.raleway.large Our Team
-            hr.div.m-y-3.hidden-sm-up
 
           .col-md-6
-            h4.m-b-4 We are a close-knit team. In fact, we are proud to call our group a family.
+            h4.m-b-3 We are a close-knit team. In fact, we are proud to call our group a family.
 
         .row
           .team-slick
@@ -127,9 +130,9 @@ block content
                             a(href="mailto:#{person.social.email}")
                               span.ti-email
                 .person-info.p-a-2.text-xs-center
-                  h5.montserrat.uppercase.m-b-0
+                  h5.uppercase.m-y-0
                     != person.name
-                  h6.montserrat.uppercase.fade-half.m-b-0
+                  h6.uppercase.fade-half.m-y-0
                     != person.pos
 
         // end of row
@@ -145,7 +148,7 @@ block content
         .row
           .col-md-6.contact-info.p-t-6.p-y-4.p-b-xs-3.p-r-2.p-r-xs-1.text-xs-center.text-sm-left
             h5.uppercase.m-b-0
-              strong We want to hear from you.
+              strong We'd love to hear from you.
             h1.m-b-2.enddot.raleway.large Get In Touch
             hr.div.div-left-sm.m-b-3
 
@@ -172,7 +175,7 @@ block content
         // end of row
       // end of container
       
-    footer.footer-2.bg-dark.p-t-xs-0
+    footer.footer-2.bg-dark.p-y-6.p-t-xs-0
       .container
         .row
           .col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.text-xs-center

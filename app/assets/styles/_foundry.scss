@@ -52,7 +52,7 @@ $adventure: #91A05C;
 $resume: #13181D;
 
 $color-primary: $red;
-$bg-secondary: #f3f3f3;
+$bg-secondary: mix($resume, #fff, 3%);
 $bg-dark: $resume;
 
 $base-font: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1573,7 +1573,7 @@ nav .cart-overview a {
   }
 
   .module.widget-handle i {
-    line-height: 40px;
+    // line-height: 40px;
   }
 
   .module.widget-handle .title {
