@@ -217,9 +217,9 @@ $color-4: $bg-secondary;
   width: 100%;
   margin: 2em 0;
   overflow: hidden;
-  transition: height .4s ease;
+  transition: height .3s ease-in-out;
 
-  li {
+  li[data-date] {
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -309,4 +309,28 @@ $color-4: $bg-secondary;
     opacity: 1;
     transform: translateX(0%);
   }
+}
+
+h2.date-display {
+  position: relative;
+  padding-bottom: 1rem;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    bottom: 0;
+    background: $red;
+  }
+}
+
+
+.label-winner {
+  background: transparent;
+  color: $red;
+}
+.label-nomination {
+  background: transparent;
+  color: $green;
 }

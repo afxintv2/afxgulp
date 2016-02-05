@@ -9,7 +9,6 @@ var fs = require('fs');
 var extend = require('gulp-extend');
 var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
-var minifyCss = require('gulp-minify-css');
 var cssnano = require('gulp-cssnano');
 var gulpif = require('gulp-if');
 var rev = require('gulp-rev');
@@ -81,8 +80,7 @@ gulp.task('useref', 'Bundle CSS and JS based on build tags and copy to `dist/` f
     return gulp.src(config.useref.src)
       .pipe(assets)
       .pipe(gulpif('*.js', gulpif(config.uglifyJs, uglify()))) // uglify JS
-      // .pipe(gulpif('*.css', gulpif(config.minifyCss, minifyCss()))) // minify CSS
-      .pipe(gulpif('*.css', gulpif(config.minifyCss, cssnano()))) // minify CSS
+      .pipe(gulpif('*.css', gulpif(config.minifyCss, cssnano()))) // minify CSS, using cssnano
       .pipe(gulpif(config.cacheBust, rev()))
       .pipe(assets.restore())
       .pipe(useref())

@@ -782,14 +782,16 @@ $(document).ready(function() {
 				submitButton.html(jQuery('<div />').addClass('form-loading')).attr('disabled', 'disabled');
 
 				jQuery.ajax({
-					type: "POST",
+					method: "POST",
 					url: "//formspree.io/info@arteffectsinternational.com",
 					data: thisForm.serialize() + "&url=" + window.location.href,
 					dataType: 'json',
 					success: function(response) {
 						submitButton.html(submitButton.attr('data-text')).removeAttr('disabled');
 
-						if (response.success == 'email sent') {
+						console.log(response);
+
+						if (typeof response.success !== 'undefined') {
 							thisForm.find('input[type="text"]').val("");
 							thisForm.find('textarea').val("");
 							thisForm.find('.form-success').fadeIn(1000);
