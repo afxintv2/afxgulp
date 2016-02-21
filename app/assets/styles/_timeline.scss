@@ -285,6 +285,14 @@ $color-4: $bg-secondary;
   em, p {
     line-height: 1.6;
   }
+
+  p.subcontent {
+    margin-bottom: 0;
+  }
+
+  ul {
+    margin-top: 0;
+  }
 }
 
 @keyframes cd-enter-right {
@@ -313,6 +321,7 @@ $color-4: $bg-secondary;
 
 h2.date-display {
   position: relative;
+  font-weight: 300 !important;
   padding-bottom: 1rem;
 
   &:before {
@@ -329,8 +338,11 @@ h2.date-display {
 .label-winner {
   background: transparent;
   color: $red;
+  padding-left: 0;
+  // padding-right: 0;
 }
 .label-nomination {
   background: transparent;
   color: $green;
+  padding-left: 0;
 }
