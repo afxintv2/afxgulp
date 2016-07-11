@@ -70,6 +70,18 @@
       }
     },
     {
+      "avatar": "alan.jpg",
+      "name": "Azlan Al-Bukhary",
+      "pos": "Head, P.R. &amp; Promotions",
+      "social": {
+        "facebook": "azlanalbukhari",
+        "twitter": "azlanalbukhary",
+        "instagram": "azlanalbukhary",
+        "email": "azlan@arteffectsinternational.com",
+        "web": "http://azlanalbukhary.com"
+      }
+    },
+    {
       "avatar": "khidir.jpg",
       "name": "Khidir Rahim",
       "pos": "Designer, Photographer",
@@ -108,6 +120,16 @@
         "facebook": "mohdsyamsuri26",
         "twitter": "syamunic",
         "instagram": "syamzawawi"
+      }
+    },
+    {
+      "avatar": "harith.jpg",
+      "name": "Harith Radzi",
+      "pos": "Production Assistant",
+      "social": {
+        "facebook": "harithradzi",
+        "twitter": "cikoy25",
+        "instagram": "c1ko1"
       }
     }
   ]

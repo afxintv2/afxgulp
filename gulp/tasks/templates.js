@@ -72,18 +72,19 @@ gulp.task('templates:prepareData', 'Merge views data', function() {
 gulp.task('useref', 'Bundle CSS and JS based on build tags and copy to `dist/` folder', function () {
   // run useref only in build
   if (build.isBuild()) {
-    var assets = useref.assets(config.useref.assetsCfg);
+    // var assets = useref.assets(config.useref.assetsCfg);
 
     var jadeFilesOnly = filter(['**/*.jade'], {restore: true});
     var excludeJade = filter(['**','!**/*.jade']);
 
     return gulp.src(config.useref.src)
-      .pipe(assets)
+      // .pipe(assets)
+      .pipe(useref())
       .pipe(gulpif('*.js', gulpif(config.uglifyJs, uglify()))) // uglify JS
       .pipe(gulpif('*.css', gulpif(config.minifyCss, cssnano()))) // minify CSS, using cssnano
-      .pipe(gulpif(config.cacheBust, rev()))
-      .pipe(assets.restore())
-      .pipe(useref())
+      // .pipe(gulpif(config.cacheBust, rev()))
+      .pipe(gulpif('!**/*.jade',gulpif(config.cacheBust, rev())))
+      // .pipe(assets.restore())
       .pipe(gulpif(config.cacheBust, revReplace({replaceInExtensions: ['.jade', '.css', '.js']})))
       .pipe(jadeFilesOnly)
       .pipe(gulp.dest(config.useref.destJade))
